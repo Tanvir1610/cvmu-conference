@@ -268,7 +268,7 @@
     }
     @media(max-width:768px){
       .hero h1 {
-        font-size: 1rem;
+        font-size: 2rem;
       }
     }
     .hero {
@@ -541,7 +541,7 @@
           <tr>
             <th>Name</th>
             <th>Email</th>
-            <th>Mobile</th>
+            <!-- <th>Mobile</th> -->
           </tr>
         </thead>
         <tbody id="table"></tbody>
@@ -573,8 +573,7 @@
     <div class="footer-content">
       <p>© 2025 SDSTD Conference. All rights reserved.</p>
       <div class="footer-links">
-        <p>Design And Develop By</p>
-        <p style="font-weight: bold;">Student Team of CP & IT GCET College</p>
+        <p>Design And Develop By <span style="font-weight: bold;">Student Team of CP & IT GCET College</span></p>
       </div>
     </div>
   </footer>
@@ -592,17 +591,19 @@
       window.open(url, '_blank').focus();
     }
     const tableData = [
-        { Name: "Dr. Shivmurti Srivastav", Email: "shivmurti.shrivastava@cvmu.edu.in", Mobile: "9428901917" },
+        { Name: "Dr. Shivmurti Srivastav", Email: "shivmurti.shrivastava@cvmu.edu.in", 
+          // Mobile: "9428901917" 
+        },
         
         {
           Name: "Dr. Vinod Patel",
           Email: "vinodpatel@gcet.ac.in",
-          Mobile:"9537869801"
+          // Mobile:"9537869801"
         },
         {
           Name: "Dr. Foram Joshi",
           Email:"fmjoshi@mbit.edu.in",
-          Mobile: "9426885360"
+          // Mobile: "9426885360"
         }
       ];
 
@@ -610,7 +611,7 @@
 
       tableData.forEach((entry) => {
         const row = document.createElement("tr");
-        row.innerHTML = `<td>${entry.Name}</td><td>${entry.Email}</td><td>${entry.Mobile}</td>`;
+        row.innerHTML = `<td>${entry.Name}</td><td>${entry.Email}</td>`;
         table.appendChild(row);
       });
   </script>
