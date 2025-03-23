@@ -161,7 +161,7 @@
         tr,
         td {
           padding: 10px;
-          font-size: 0.4rem;
+          font-size: 10px;
           margin: 0;
         }
       }
@@ -356,7 +356,7 @@
       text-align: center;
     }
     .table-container {
-      overflow-x: auto;
+      overflow-x: hidden;
       text-align: center;
       justify-content: center;
       align-items: center;
@@ -406,7 +406,7 @@
           <a href="#" class="dropbtn">Committee</a>
           <div class="dropdown-content">
             <a href="organizing.html">Organizing Committee</a>
-            <a href="track-coordinators.html">Track Coordinators</a>
+            <a href="track-coordinators.html">Track Co-ordinators</a>
             <a href="ITC.html">International Technical Committee</a>
             <a href="NC.html">National Technical Committee</a>
             <!-- <a href="WC.html">Website Coordinator</a> -->
@@ -445,7 +445,7 @@
         <a href="#" class="dropbtn">Committee</a>
         <div class="dropdown-content">
           <a href="organizing.html">Organizing Committee</a>
-          <a href="track-coordinators.html">Track Coordinators</a>
+          <a href="track-coordinators.html">Track Co-ordinators</a>
           <a href="ITC.html">International Technical Committee</a>
           <a href="NC.html">National Technical Committee</a>
           <!-- <a href="WC.html">Website Coordinator</a> -->
@@ -541,7 +541,7 @@
           <tr>
             <th>Name</th>
             <th>Email</th>
-            <!-- <th>Mobile</th> -->
+            <th>Mobile</th>
           </tr>
         </thead>
         <tbody id="table"></tbody>
@@ -561,7 +561,6 @@
           Mobile No:9426885360
         </p>
         </div> -->
-        <p>GCET: +91 2692-231651 ADIT: +91 2692-233680 MBIT: +91 2692-230823</p>
     </section>
     <h2 class="Address" style="margin-top: 0px;">The CVM University</h2>
     <p style="text-align: center;">Beside BVM College,Opp. Shastri Maidan,Vallabh Vidhyanagar-388120 ,Gujarat, India</p>
@@ -592,18 +591,18 @@
     }
     const tableData = [
         { Name: "Dr. Shivmurti Srivastav", Email: "shivmurti.shrivastava@cvmu.edu.in", 
-          // Mobile: "9428901917" 
+          Mobile: "+91 2692-233680" 
         },
         
         {
           Name: "Dr. Vinod Patel",
           Email: "vinodpatel@gcet.ac.in",
-          // Mobile:"9537869801"
+          Mobile:"+91 2692-231651"
         },
         {
           Name: "Dr. Foram Joshi",
           Email:"fmjoshi@mbit.edu.in",
-          // Mobile: "9426885360"
+          Mobile: "+91 2692-230823"
         }
       ];
 
@@ -611,7 +610,7 @@
 
       tableData.forEach((entry) => {
         const row = document.createElement("tr");
-        row.innerHTML = `<td>${entry.Name}</td><td>${entry.Email}</td>`;
+        row.innerHTML = `<td>${entry.Name}</td><td>${entry.Email}</td><td>${entry.Mobile}</td>`;
         table.appendChild(row);
       });
   </script>
