@@ -478,15 +478,20 @@ nav {
   margin-bottom: 1.5rem;
   font-size: 2rem;
   font-weight: bold;
-  color: #fff;
+  color: #222;
   /* text-align: center; */
 }
 
 .content-section p {
   margin-bottom: 1.5rem;
   font-size: 1.1rem;
-  color: #222;
+  /* color: #222; */
   font-weight: bold;
+  background: linear-gradient(to right, #2563eb 0%, #06b6d4 100%);
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-align: justify;
 }
 
 .track-section {
