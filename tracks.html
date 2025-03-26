@@ -6,10 +6,11 @@
     <title>Conference Tracks - SDSTD2025 Conference</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-    rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
     <style>
       body {
         animation: slideUp 0.5s ease;
@@ -184,7 +185,7 @@
         .logo-container {
           gap: 2rem;
         }
-        .logo{
+        .logo {
           height: 25px;
         }
       }
@@ -193,9 +194,13 @@
         /* font-size: 4rem; */
         font-size: 2rem;
         font-weight: bold;
-        color: #fff;
+        color: #000;
         margin-top: 1rem;
+        background: #fff;
+        width: fit-content;
+        margin: 0 auto;
         margin-bottom: 1rem;
+        margin-top: 2rem;
         /* background: linear-gradient(to right, #2563eb 0%, #06b6d4 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; */
@@ -207,7 +212,7 @@
         /* -webkit-text-fill-color: transparent; */
         animation: fadeIn 1s ease;
       }
-      .track-content h2{
+      .track-content h2 {
         font-weight: 500;
       }
       @keyframes fadeInUp {
@@ -275,7 +280,11 @@
               <a href="call-for-papers.html">Call for Papers</a>
               <a href="important-dates.html">Important Dates</a>
               <a href="submission-guidelines.html">Submission Guidelines</a>
-              <a href="#" onclick="openInNewTab('https://forms.gle/oZiaETYz1s2UpWhR8')">Registration</a>
+              <a
+                href="#"
+                onclick="openInNewTab('https://forms.gle/oZiaETYz1s2UpWhR8')"
+                >Registration</a
+              >
               <a href="Payment.html">Payment Details</a>
             </div>
           </li>
@@ -316,7 +325,11 @@
             <a href="call-for-papers.html">Call for Papers</a>
             <a href="important-dates.html">Important Dates</a>
             <a href="submission-guidelines.html">Submission Guidelines</a>
-            <a href="#" onclick="openInNewTab('https://forms.gle/oZiaETYz1s2UpWhR8')">Registration</a>
+            <a
+              href="#"
+              onclick="openInNewTab('https://forms.gle/oZiaETYz1s2UpWhR8')"
+              >Registration</a
+            >
             <a href="Payment.html">Payment Details</a>
           </div>
         </li>
@@ -483,7 +496,12 @@
       <div class="footer-content">
         <p>© 2025 SDSTD Conference. All rights reserved.</p>
         <div class="footer-links">
-          <p>Design And Develop By <span style="font-weight: bold">Student Team of CP & IT GCET College</span></p>
+          <p>
+            Design And Develop By
+            <span style="font-weight: bold"
+              >Student Team of CP & IT GCET College</span
+            >
+          </p>
         </div>
       </div>
     </footer>
@@ -497,8 +515,8 @@
         const mobileNav = document.getElementById("mobileNav");
         mobileNav.classList.remove("active");
       }
-      function openInNewTab(url){
-        window.open(url, '_blank').focus();
+      function openInNewTab(url) {
+        window.open(url, "_blank").focus();
       }
     </script>
     <script src="script.js"></script>

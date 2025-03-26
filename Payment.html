@@ -6,10 +6,11 @@
     <title>Payment Details</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-    rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
     <style>
       body {
         animation: slideUp 0.5s ease-in;
@@ -121,7 +122,7 @@
         .logo-container {
           gap: 2rem;
         }
-        .conference-info{
+        .conference-info {
           margin-bottom: 1.5rem;
           width: 85%;
         }
@@ -129,8 +130,13 @@
       h2 {
         margin-top: 3rem;
         font-weight: bold;
-        font-size: 1.5rem;
-        color: #fff;
+        font-size: 2rem;
+        color: #000;
+        background: #fff;
+        width: fit-content;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
       }
       .submit-paper {
         color: #fff !important;
@@ -143,12 +149,13 @@
         margin: auto;
         /* border: 1px solid 'black; */
         text-align: center;
+        margin-bottom: 1rem;
       }
       .bank-info > img {
         /* border: 1px solid black; */
         margin: auto;
         width: 400px;
-        height: 600px;
+        /* height: 600px; */
       }
       @media (max-width: 768px) {
         .bank-info > img {
@@ -188,7 +195,11 @@
               <a href="call-for-papers.html">Call for Papers</a>
               <a href="important-dates.html">Important Dates</a>
               <a href="submission-guidelines.html">Submission Guidelines</a>
-              <a href="#" onclick="openInNewTab('https://forms.gle/oZiaETYz1s2UpWhR8')">Registration</a>
+              <a
+                href="#"
+                onclick="openInNewTab('https://forms.gle/oZiaETYz1s2UpWhR8')"
+                >Registration</a
+              >
               <a href="Payment.html">Payment Details</a>
             </div>
           </li>
@@ -229,7 +240,10 @@
             <a href="call-for-papers.html">Call for Papers</a>
             <a href="important-dates.html">Important Dates</a>
             <a href="submission-guidelines.html">Submission Guidelines</a>
-            <a href="#" onclick="openInNewTab('https://forms.gle/oZiaETYz1s2UpWhR8')">Registration</a
+            <a
+              href="#"
+              onclick="openInNewTab('https://forms.gle/oZiaETYz1s2UpWhR8')"
+              >Registration</a
             >
             <a href="Payment.html">Payment Details</a>
           </div>
@@ -251,7 +265,7 @@
     </header>
     <h2>Conference Payment Details</h2>
     <div class="conference-info">
-      <h3 style="text-align: center; font-weight: bold;">Registration Fees:</h3>
+      <h3 style="text-align: center; font-weight: bold">Registration Fees:</h3>
       <ul>
         <li>Rs. 1000 per participant (outside CVM University)</li>
         <li>
@@ -263,9 +277,11 @@
     </div>
 
     <div class="payment-details">
-      <h3 id="h3" style="font-weight: bold;">Bank & QR Code Details for Payment</h3>
+      <h3 id="h3" style="font-weight: bold">
+        Bank & QR Code Details for Payment
+      </h3>
       <div class="bank-info">
-        <img src="CVMU_QR.jpeg" alt="QR Code" />
+        <img src="IMG_3405.jpg" alt="QR Code" />
         <p><strong>Bank Name:</strong> HDFC BANK</p>
         <p><strong>Account Number:</strong> 50100402371501</p>
         <p><strong>Account Holder:</strong> CVM UNIVERSITY</p>
@@ -277,11 +293,16 @@
         <p><strong>Email:</strong> account.section@cvmu.edu.in</p>
       </div>
     </div>
-    <footer style="margin-top: 1.5rem;">
+    <footer style="margin-top: 1.5rem">
       <div class="footer-content">
         <p>© 2025 SDSTD Conference. All rights reserved.</p>
         <div class="footer-links">
-          <p>Design And Develop By <span style="font-weight: bold">Student Team of CP & IT GCET College</span></p>
+          <p>
+            Design And Develop By
+            <span style="font-weight: bold"
+              >Student Team of CP & IT GCET College</span
+            >
+          </p>
         </div>
       </div>
     </footer>
@@ -295,8 +316,8 @@
         const mobileNav = document.getElementById("mobileNav");
         mobileNav.classList.remove("active");
       }
-      function openInNewTab(url){
-      window.open(url, '_blank').focus();
+      function openInNewTab(url) {
+        window.open(url, "_blank").focus();
       }
     </script>
   </body>
