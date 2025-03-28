@@ -196,7 +196,7 @@
         font-weight: bold;
         color: #000;
         margin-top: 1rem;
-        background: #fff;
+        /* background: #fff; */
         width: fit-content;
         margin: 0 auto;
         margin-bottom: 1rem;
@@ -206,11 +206,12 @@
         -webkit-text-fill-color: transparent; */
       }
       .submit-paper {
-        color: #fff !important;
+        color: #000;
         /* background: #027bff; */
-        background: linear-gradient(to right, #2563eb 0%, #06b6d4 100%);
+        background-color: linear-gradient(to right, #cffafe 0%, #dbeafe 100%);
         /* -webkit-text-fill-color: transparent; */
         animation: fadeIn 1s ease;
+        box-shadow: 1px -4px 5px;
       }
       .track-content h2 {
         font-weight: 500;
@@ -288,7 +289,7 @@
               <a href="Payment.html">Payment Details</a>
             </div>
           </li>
-          <li><a href="keynote.html">Keynote Speakers</a></li>
+          <li><a href="keynote.html">Keynote Speaker</a></li>
           <li class="dropdown">
             <a href="#" class="dropbtn">Committee</a>
             <div class="dropdown-content">
@@ -301,8 +302,7 @@
           </li>
           <li><a href="index.html#contact">Contact Us</a></li>
           <li>
-            <a href="#" class="submit-paper" style="color: #000 !important"
-              >Submit Paper</a
+            <a href="#" class="submit-paper" onclick="openInNewTab('https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FSDSTD2025%2FSubmission%2FIndex')">Submit Paper</a
             >
           </li>
         </ul>
@@ -333,7 +333,7 @@
             <a href="Payment.html">Payment Details</a>
           </div>
         </li>
-        <li><a href="keynote.html">Keynote Speakers</a></li>
+        <li><a href="keynote.html">Keynote Speaker</a></li>
         <li class="dropdown">
           <a href="#" class="dropbtn">Committee</a>
           <div class="dropdown-content">
@@ -345,7 +345,7 @@
           </div>
         </li>
         <li><a href="index.html#contact">Contact Us</a></li>
-        <li><a href="#" class="submit-paper">Submit Paper</a></li>
+        <li><a href="#" class="submit-paper" onclick="openInNewTab('https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FSDSTD2025%2FSubmission%2FIndex')">Submit Paper</a></li>
       </div>
     </header>
 
@@ -445,7 +445,7 @@
               <li>Communication Circuits and Systems</li>
               <li>High-Speed and Optical Wirelines, Circuits, and Systems</li>
               <li>Biomedical and Healthcare Circuits and Systems</li>
-              <li>Sensors and Interfaces, Design Automation</li>
+              <li>Sensors and Interfaces, Design Automation, Embedded systems</li>
               <li>Nano-Electronics, Devices, and System Integration</li>
               <li>Neural Networks and Neuromorphic Engineering</li>
               <li>Nonlinear Systems and Circuit Theory</li>

@@ -22,7 +22,7 @@
         text-align: center;
         font-size: 2rem;
         font-weight: bold;
-        background: #fff;
+        /* background: #fff; */
         color: #000;
         width: fit-content;
         margin: 0 auto;
@@ -204,11 +204,12 @@
         }
       }
       .submit-paper {
-        color: #fff !important;
+        color: #000;
         /* background: #027bff; */
-        background: linear-gradient(to right, #2563eb 0%, #06b6d4 100%);
+        background-color: linear-gradient(to right, #cffafe 0%, #dbeafe 100%);
         /* -webkit-text-fill-color: transparent; */
         animation: fadeIn 1s ease;
+        box-shadow: 1px -4px 5px;
       }
     </style>
   </head>
@@ -246,7 +247,7 @@
               <a href="Payment.html">Payment Details</a>
             </div>
           </li>
-          <li><a href="keynote.html">Keynote Speakers</a></li>
+          <li><a href="keynote.html">Keynote Speaker</a></li>
           <li class="dropdown">
             <a href="#" class="dropbtn">Committee</a>
             <div class="dropdown-content">
@@ -259,8 +260,7 @@
           </li>
           <li><a href="index.html#contact">Contact Us</a></li>
           <li>
-            <a href="#" class="submit-paper" style="color: #000 !important"
-              >Submit Paper</a
+            <a href="#" class="submit-paper" onclick="openInNewTab('https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FSDSTD2025%2FSubmission%2FIndex')">Submit Paper</a
             >
           </li>
         </ul>
@@ -291,7 +291,7 @@
             <a href="Payment.html">Payment Details</a>
           </div>
         </li>
-        <li><a href="keynote.html">Keynote Speakers</a></li>
+        <li><a href="keynote.html">Keynote Speaker</a></li>
         <li class="dropdown">
           <a href="#" class="dropbtn">Committee</a>
           <div class="dropdown-content">
@@ -303,7 +303,7 @@
           </div>
         </li>
         <li><a href="index.html#contact">Contact Us</a></li>
-        <li><a href="#" class="submit-paper">Submit Paper</a></li>
+        <li><a href="#" class="submit-paper" onclick="openInNewTab('https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FSDSTD2025%2FSubmission%2FIndex')">Submit Paper</a></li>
       </div>
     </header>
     <main>
@@ -320,7 +320,7 @@
           <h2>Important Guidelines</h2>
           <ul>
             <li>
-              The organizers of STDST 2025 regard plagiarism as serious
+              The organizers of SDSTD 2025 regard plagiarism as serious
               professional misconduct
             </li>
             <li>
@@ -328,7 +328,7 @@
               identified, the submissions will be rejected
             </li>
             <li>
-              The STDST 2025 doesn't encourage withdrawals after the paper is
+              The SDSTD 2025 doesn't encourage withdrawals after the paper is
               accepted
             </li>
             <li>

@@ -218,11 +218,12 @@
     }
 
     .submit-paper {
-      color: #fff !important;
+      color: #000;
       /* background: #027bff; */
-      background: linear-gradient(to right, #2563eb 0%, #06b6d4 100%);
+      background-color: linear-gradient(to right, #cffafe 0%, #dbeafe 100%);
       /* -webkit-text-fill-color: transparent; */
       animation: fadeIn 1s ease;
+      box-shadow: 1px -4px 5px;
     }
 
     @keyframes fadeInUp {
@@ -358,8 +359,8 @@
       }
       
       .committee-member{
-        width: 310px;
-        height: 150px;
+        width: 150px;
+        /* height: 150px; */
       }
       .member-role {
         font-size: 0.6rem;
@@ -418,7 +419,7 @@
           <a href="Payment.html">Payment Details</a>
         </div>
       </li>
-      <li><a href="keynote.html">Keynote Speakers</a></li>
+      <li><a href="keynote.html">Keynote Speaker</a></li>
       <li class="dropdown">
         <a href="#" class="dropbtn">Committee</a>
         <div class="dropdown-content">
@@ -431,7 +432,7 @@
       </li>
       <li><a href="index.html#contact">Contact Us</a></li>
       <li>
-        <a href="#" class="submit-paper" style="color: #000 !important">Submit Paper</a>
+        <a href="#" class="submit-paper" onclick="openInNewTab('https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FSDSTD2025%2FSubmission%2FIndex')">Submit Paper</a>
       </li>
     </ul>
     <button class="menu-btn" onclick="toggleMenu()">☰</button>
@@ -457,7 +458,7 @@
         <a href="Payment.html">Payment Details</a>
       </div>
     </li>
-    <li><a href="keynote.html">Keynote Speakers</a></li>
+    <li><a href="keynote.html">Keynote Speaker</a></li>
     <li class="dropdown">
       <a href="#" class="dropbtn">Committee</a>
       <div class="dropdown-content">
@@ -469,22 +470,21 @@
       </div>
     </li>
     <li><a href="index.html#contact">Contact Us</a></li>
-    <li><a href="#" class="submit-paper">Submit Paper</a></li>
+    <li><a href="#" class="submit-paper" onclick="openInNewTab('https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FSDSTD2025%2FSubmission%2FIndex')">Submit Paper</a></li>
   </div>
 </header>
-<h1 style="font-weight: bold; font-size: 2rem; color: #000; background: #fff; width: fit-content;">Keynote Speakers</h1>
+<h1 style="font-weight: bold; font-size: 2rem; color: #000; width: fit-content;">Keynote Speaker</h1>
 <div class="committee-grid" style="margin-top: 2rem; margin-bottom: 2rem;">
   <div class="committee-member">
     <img src="Kiran Trivedi.jpg" alt="Dr. Kiran Trivedi" style="object-fit: cover;" />
     <div class="member-info">
       <h3 class="member-name">Dr. Kiran Trivedi</h3>
-      <p class="member-role">Associate Professor of Computer Science<br />at the University of
-        Wollongong,<br /> GIFT City campus, Gandhinagar, Gujarat, India.</p>
+      <p class="member-role">Associate Professor,<br/>Computer Science<br />University of Wollongong,<br /> GIFT City campus, Gandhinagar, Gujarat, India.</p>
     </div>
   </div>
 
 </div>
-<h1 style="font-weight: bold; font-size: 2rem; color: #000; background: #fff; width: fit-content;">Experts Talk</h1>
+<h1 style="font-weight: bold; font-size: 2rem; color: #000; width: fit-content;">Expert Talk</h1>
 <div class="committee-grid" style="margin-top: 2rem; margin-bottom: 2rem">
   <div class="committee-member">
     <img src="RJP.jpg" alt="Dr. Rahul Jashvantbhai Pandya"
@@ -492,7 +492,7 @@
     <div class="member-info">
       <h3 class="member-name">Dr. Rahul Jashvantbhai Pandya</h3>
       <!-- <h3 style="font-size: 0.8rem;">Expert talk on "Tiny Machine Learning"</h3> -->
-      <p class="member-role" id="member">Senior IEEE member,Assistant Professor,<br/>Electrical,Electronics and Communication<br/>Engineering (EECE)<br/>Department,Indian Institute of Technology, Dharwad</p>
+      <p class="member-role" id="member">Senior IEEE member,<br>Assistant Professor,<br/>Electrical,Electronics and Communication Engineering (EECE),<br/>Indian Institute of Technology, Dharwad</p>
     </div>
   </div>
   <div class="committee-member" style="text-align: left;">
@@ -501,8 +501,7 @@
       <h3 class="member-name">Satyam Panchal</h3>
       <!-- <h3 style="font-size: 0.8rem;">Expert talk on "Introduction to Electric Vehicle and Modeling" -->
       <!-- </h3><br/> -->
-      <p class="member-role"> Ph.D., P.Eng.,Adjunct Assistant Professor,<br />Department of
-        Mechanical and Mechatronics Engineering/<br />University of Waterloo, Ontario, Canada</p>
+      <p class="member-role"> Ph.D., P.Eng.,<br>Adjunct Assistant Professor,<br />Mechanical and Mechatronics Engineering/<br />University of Waterloo, Ontario, Canada</p>
     </div>
   </div>
   <div class="committee-member" style="text-align: left;">
@@ -511,7 +510,7 @@
       <h3 class="member-name">Dr. Modi Chirag Navinchandra</h3>
       <!-- <h3 style="font-size: 0.8rem;">Expert talk on "Introduction to Electric Vehicle and Modeling" -->
       <!-- </h3><br/> -->
-      <p class="member-role" >Associate Professor in the department <br/>of computer science and engineering at National Institute of Technology Goa (NIT Goa).</p>
+      <p class="member-role" >Associate Professor ,<br/>computer science and <br>engineering,<br>National Institute of Technology Goa (NIT Goa).</p>
     </div>
   </div>
 </div>

@@ -182,11 +182,12 @@
       }
 
       .submit-paper {
-        color: #fff !important;
+        color: #000;
         /* background: #027bff; */
-        background: linear-gradient(to right, #2563eb 0%, #06b6d4 100%);
+        background-color: linear-gradient(to right, #cffafe 0%, #dbeafe 100%);
         /* -webkit-text-fill-color: transparent; */
         animation: fadeIn 1s ease;
+        box-shadow: 1px -4px 5px;
       }
 
       @keyframes fadeInUp {
@@ -221,7 +222,8 @@
         .track-coordinators-section h1,
         .section-description {
           text-align: justify;
-          padding: 1rem;
+          /* padding: 1rem; */
+          font-size: 0.8rem;
         }
         .track-coordinators-section h1 {
           font-size: 1.5rem;
@@ -236,24 +238,26 @@
           text-align: center;
         }
         .coordinator-image img {
-          width: 80px;
-          height: 80px;
+          width: 150px;
+          height: 150px;
           object-fit: cover;
           /* border-radius: 50%; */
           margin: 0 auto;
         }
         .coordinator-image{
-          height: 80px;
-          width: 80px;
+          height: 150px;
+          width: 150px;
+          margin: 0 auto;
         }
         .coordinator-card{
-          height: 90px;
-          width: 230px;
+          height: 240px;
+          width: 150px;
           margin: 0 auto;
         }
       }
       .container h2 {
         background: none;
+        text-align: center;
       }
     </style>
   </head>
@@ -288,7 +292,7 @@
               <a href="Payment.html">Payment Details</a>
             </div>
           </li>
-          <li><a href="keynote.html">Keynote Speakers</a></li>
+          <li><a href="keynote.html">Keynote Speaker</a></li>
           <li class="dropdown">
             <a href="#" class="dropbtn">Committee</a>
             <div class="dropdown-content">
@@ -301,9 +305,7 @@
           </li>
           <li><a href="index.html#contact">Contact Us</a></li>
           <li>
-            <a href="#" class="submit-paper" style="color: #000 !important"
-              >Submit Paper</a
-            >
+            <a href="#" class="submit-paper" onclick="openInNewTab('https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FSDSTD2025%2FSubmission%2FIndex')">Submit Paper</a>
           </li>
         </ul>
         <button class="menu-btn" onclick="toggleMenu()">☰</button>
@@ -329,7 +331,7 @@
             <a href="Payment.html">Payment Details</a>
           </div>
         </li>
-        <li><a href="keynote.html">Keynote Speakers</a></li>
+        <li><a href="keynote.html">Keynote Speaker</a></li>
         <li class="dropdown">
           <a href="#" class="dropbtn">Committee</a>
           <div class="dropdown-content">
@@ -341,7 +343,7 @@
           </div>
         </li>
         <li><a href="index.html#contact">Contact Us</a></li>
-        <li><a href="#" class="submit-paper">Submit Paper</a></li>
+        <li><a href="#" class="submit-paper" onclick="openInNewTab('https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FSDSTD2025%2FSubmission%2FIndex')">Submit Paper</a></li>
       </div>
     </header>
     <main>
@@ -351,7 +353,7 @@
           <p class="section-description">
             Track Co-ordinators in an international conference manage and oversee
             specific thematic tracks or sessions. They are responsible for
-            organizing speakers, reviewing submissions, and ensuring smooth
+            organizing speakers, reviewing submissions and ensuring smooth
             execution of sessions related to their track. Their role helps
             maintain the quality and focus of discussions within their assigned
             area of expertise.
@@ -367,7 +369,7 @@
                 <div class="coordinator-info">
                   <h3>Dr. Ajay M Patel</h3>
                   <p>Contact:9427037011</p>
-                  <p>Email: ajaypatel@gcet.ac.in</p>
+                  <p>Email:<br/>ajaypatel@gcet.ac.in</p>
                 </div>
               </div>
 
@@ -378,7 +380,7 @@
                 <div class="coordinator-info">
                   <h3>Prof. Maharshi Thakkar</h3>
                   <p>Contact:8511849931</p>
-                  <p>Email: me.mhthakkar@adit.ac.in</p>
+                  <p>Email:<br/>me.mhthakkar@adit.ac.in</p>
                 </div>
               </div>
 
@@ -392,7 +394,7 @@
                 <div class="coordinator-info">
                   <h3>Prof. Simit B. Prajapati</h3>
                   <p>Contact:9898408940</p>
-                  <p>Email: simit31@adit.ac.in</p>
+                  <p>Email:<br/>simit31@adit.ac.in</p>
                 </div>
               </div>
             </div>
@@ -414,7 +416,7 @@
                 <div class="coordinator-info">
                   <h3>Dr. Dharmesh Ka Patel</h3>
                   <p>Contact:9824157874</p>
-                  <p>Email: dharmeshkapatel@gcet.ac.in</p>
+                  <p>Email:<br/>dharmeshkapatel@gcet.ac.in</p>
                 </div>
               </div>
 
@@ -428,7 +430,7 @@
                 <div class="coordinator-info">
                   <h3>Prof. Darshan Yagnik</h3>
                   <p>Contact:9898415126</p>
-                  <p>Email: civil.dmyagnik@adit.ac.in</p>
+                  <p>Email:<br/>civil.dmyagnik@adit.ac.in</p>
                 </div>
               </div>
 
@@ -439,7 +441,7 @@
                 <div class="coordinator-info">
                   <h3>Dr. Kshitiz Kumar</h3>
                   <p>Contact:8222861889</p>
-                  <p>Email: fpt.kshitiz@adit.ac.in</p>
+                  <p>Email:<br/>fpt.kshitiz@adit.ac.in</p>
                 </div>
               </div>
             </div>
@@ -455,7 +457,7 @@
                 <div class="coordinator-info">
                   <h3>Dr. Bhaskar Thakker</h3>
                   <p>Contact:9574383265</p>
-                  <p>Email: bhaskarthakkar@gcet.ac.in</p>
+                  <p>Email:<br/>bhaskarthakkar@gcet.ac.in</p>
                 </div>
               </div>
 
@@ -466,7 +468,7 @@
                 <div class="coordinator-info">
                   <h3>Prof. Paresh Modha</h3>
                   <p>Contact:9998567827</p>
-                  <p>Email: ee.paresh@adit.ac.in</p>
+                  <p>Email:<br/>ee.paresh@adit.ac.in</p>
                 </div>
               </div>
 
@@ -475,9 +477,9 @@
                   <img src="Dr. Mehyul Thakkar.jpg" alt="Dr Mehul Thakkar" />
                 </div>
                 <div class="coordinator-info">
-                  <h3>Dr Mehul Thakkar</h3>
+                  <h3>Dr. Mehul Thakkar</h3>
                   <p>Contact:9033569124</p>
-                  <p>Email: mgthakkar@mbit.edu.in</p>
+                  <p>Email:<br/>mgthakkar@mbit.edu.in</p>
                 </div>
               </div>
             </div>
@@ -493,7 +495,7 @@
                 <div class="coordinator-info">
                   <h3>Dr. Kinjal Joshi</h3>
                   <p>Contact:9924692719</p>
-                  <p>Email: kinjaljoshi@gcet.ac.in</p>
+                  <p>Email:<br/>kinjaljoshi@gcet.ac.in</p>
                 </div>
               </div>
 
@@ -510,12 +512,12 @@
 
               <div class="coordinator-card">
                 <div class="coordinator-image">
-                  <img src="Krunal Patel.jpg" alt="Dr Krunal N Patel" />
+                  <img src="Dr Krunal Patel_Trackcoordinator_IT_CP_Track.JPG" alt="Dr Krunal N Patel" />
                 </div>
                 <div class="coordinator-info">
-                  <h3>Dr Krunal N Patel</h3>
+                  <h3>Dr. Krunal N Patel</h3>
                   <p>Contact:9925789238</p>
-                  <p>Email: It.krunalpatel@adit.ac.in</p>
+                  <p>Email:<br/>It.krunalpatel@adit.ac.in</p>
                 </div>
               </div>
 
@@ -527,9 +529,49 @@
                   />
                 </div>
                 <div class="coordinator-info">
-                  <h3>Prof Pritesh Pandey</h3>
+                  <h3>Prof. Pritesh Pandey</h3>
                   <p>Contact:94263 31176</p>
-                  <p>Email: papandey@mbit.edu.in</p>
+                  <p>Email:<br/>papandey@mbit.edu.in</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="track-section">
+            <h2 style="font-weight: bold;">Applied Science and Mathematics in Engineering</h2>
+            <div class="coordinators-grid">
+              <div class="coordinator-card">
+                <div class="coordinator-image">
+                  <img src="Dr. Abhay.jpg" alt="Dr. Kinjal Joshi" />
+                </div>
+                <div class="coordinator-info">
+                  <h3>Dr. Abhay Dasadia</h3>
+                  <p>Contact:94260 17285</p>
+                  <p>Email:<br/>abhaydasadia@adit.ac.in</p>
+                </div>
+              </div>
+
+              <div class="coordinator-card">
+                <div class="coordinator-image">
+                  <img src="dummy-image.jpg" alt="Dr Krunal N Patel" />
+                </div>
+                <div class="coordinator-info">
+                  <h3>Dr. Heena Raj</h3>
+                  <p>Contact:94284 37120</p>
+                  <p>Email:<br/>heenaraj@gcet.ac.in</p>
+                </div>
+              </div>
+
+              <div class="coordinator-card">
+                <div class="coordinator-image">
+                  <img
+                    src="Dr. Shreekant Pathak.jpeg"
+                    alt="Prof Pritesh Pandey"
+                  />
+                </div>
+                <div class="coordinator-info">
+                  <h3>Dr. Shreekant Pathak</h3>
+                  <p>Contact:95101 92944</p>
+                  <p>Email:<br/>sppathak@mbit.edu.in</p>
                 </div>
               </div>
             </div>

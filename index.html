@@ -150,21 +150,24 @@
         gap: 2rem;
       }
     }
+
     @media (max-width: 768px) {
-        table {
-          transform: rotateX(0deg);
-          align-items: center;
-          justify-content: center;
-          margin: 0;
-          padding: 0;
-        }
-        tr,
-        td {
-          padding: 10px;
-          font-size: 10px;
-          margin: 0;
-        }
+      table {
+        transform: rotateX(0deg);
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
       }
+
+      tr,
+      td {
+        padding: 10px;
+        font-size: 10px;
+        margin: 0;
+      }
+    }
+
     .contact {
       /* background-color: #0b274c;
             color: white; */
@@ -188,8 +191,8 @@
       /* padding: 3rem; */
     }
 
-    @media(max-width:768px){
-      .contact p.email{
+    @media(max-width:768px) {
+      .contact p.email {
         font-size: 15px;
         padding: 0;
         margin: 0;
@@ -197,16 +200,20 @@
         margin-bottom: 2rem;
         text-align: center;
       }
-      .contact h2{
+
+      .contact h2 {
         font-size: 18px;
       }
+
       .display {
         display: block;
       }
+
       .contact-us {
         display: block;
       }
     }
+
     /* Contact Form */
     form {
       display: flex;
@@ -267,21 +274,24 @@
       margin-bottom: 1rem;
       display: inline-block;
     }
-    @media(max-width:768px){
+
+    @media(max-width:768px) {
       .hero h1 {
         font-size: 2rem;
       }
     }
+
     .hero {
       background: linear-gradient(135deg, #3b82f6, #cffafe, #dbeafe);
     }
 
     .submit-paper {
-      color: #fff !important;
-      background: linear-gradient(to right, #2563eb 0%, #06b6d4 100%);
+      color: #000;
+      background-color: linear-gradient(to right, #cffafe 0%, #dbeafe 100%);
       /* -webkit-text-fill-color: transparent; */
       margin-right: 15px;
       animation: fadeIn 1s ease;
+      box-shadow: 1px -4px 5px;
     }
 
     .register-btn {
@@ -298,10 +308,12 @@
       margin-top: 2rem;
       display: grid;
     }
+
     .contact-us {
       display: flex;
       text-align: left;
-    } 
+    }
+
     @keyframes fadeIn {
       from {
         opacity: 0;
@@ -343,27 +355,36 @@
       }
 
       .hero h2 {
-        text-align: justify;
+        text-align: center;
         font-size: 1rem;
       }
+
+      .submit-paper {
+        color: white;
+      }
     }
-    .Address{
+
+    .Address {
       margin: 0 auto;
       margin-bottom: 1rem;
       margin-top: 0;
     }
-    tr,td {
+
+    tr,
+    td {
       /* margin: 10px; */
       padding: 10px;
       text-align: center;
     }
+
     .table-container {
       overflow-x: hidden;
       text-align: center;
       justify-content: center;
       align-items: center;
     }
-    table{
+
+    table {
       text-align: center;
       margin: 0 auto;
       justify-content: center;
@@ -403,7 +424,7 @@
             <a href="Payment.html">Payment Details</a>
           </div>
         </li>
-        <li><a href="keynote.html">Keynote Speakers</a></li>
+        <li><a href="keynote.html">Keynote Speaker</a></li>
         <li class="dropdown">
           <a href="#" class="dropbtn">Committee</a>
           <div class="dropdown-content">
@@ -416,7 +437,9 @@
         </li>
         <li><a href="index.html#contact">Contact Us</a></li>
         <li>
-          <a href="#" class="submit-paper" style="color: #000 !important">Submit Paper</a>
+          <a href="#" class="submit-paper"
+            onclick="openInNewTab('https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FSDSTD2025%2FSubmission%2FIndex')">Submit
+            Paper</a>
         </li>
       </ul>
       <button class="menu-btn" onclick="toggleMenu()">☰</button>
@@ -442,7 +465,7 @@
           <a href="Payment.html">Payment Details</a>
         </div>
       </li>
-      <li><a href="keynote.html">Keynote Speakers</a></li>
+      <li><a href="keynote.html">Keynote Speaker</a></li>
       <li class="dropdown">
         <a href="#" class="dropbtn">Committee</a>
         <div class="dropdown-content">
@@ -454,16 +477,18 @@
         </div>
       </li>
       <li><a href="index.html#contact">Contact Us</a></li>
-      <li><a href="#" class="submit-paper">Submit Paper</a></li>
+      <li><a href="#" class="submit-paper"
+          onclick="openInNewTab('https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FSDSTD2025%2FSubmission%2FIndex')">Submit
+          Paper</a></li>
     </div>
   </header>
   <main>
     <section class="hero">
+      <video autoplay muted loop playsinline class="video-background">
+        <source src="Untitled video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
       <h1>
-        <!-- <video autoplay muted loop id="myVideo">
-            <source src="Untitled video.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-          </video> -->
         <img src="SDSTD2025.png" alt="SDSTD2025 Logo" class="conference-logo" />SDSTD 2025
       </h1>
       <h2>
@@ -471,9 +496,9 @@
         Transformation-2025
       </h2>
       <div class="conference-type">
-        International Conference (Hybrid Mode)
+        International Conference <span style="font-weight: bold;">(Hybrid Mode)</span>
       </div>
-      <div class="conference-dates">Conference Dates: 25-26 June 2025</div>
+      <div class="conference-dates" style="font-weight: bold;">Conference Dates: 25-26 June 2025</div>
       <div class="cta-buttons">
         <a href="#" class="register-btn" onclick="openInNewTab('https://forms.gle/oZiaETYz1s2UpWhR8')">Register Now</a>
         <!-- <a href="#" class="submit-btn">Submit Paper →</a> -->
@@ -563,9 +588,10 @@
           Mobile No:9426885360
         </p>
         </div> -->
-    </section>
-    <h2 class="Address" style="margin-top: 0px;">The CVM University</h2>
-    <p style="text-align: center;">Beside BVM College,Opp. Shastri Maidan,Vallabh Vidhyanagar-388120 ,Gujarat, India</p>
+  </section>
+  <h2 class="Address" style="margin-top: 0px;">The CVM University</h2>
+  <p style="text-align: center; margin-bottom: 1rem;">Beside BVM College,Opp. Shastri Maidan,Vallabh Vidhyanagar-388120
+    ,Gujarat, India</p>
   </section>
 
   <!-- <div id="map"></div> -->
@@ -588,33 +614,34 @@
       const mobileNav = document.getElementById("mobileNav");
       mobileNav.classList.remove("active");
     }
-    function openInNewTab(url){
+    function openInNewTab(url) {
       window.open(url, '_blank').focus();
     }
     const tableData = [
-        { Name: "Dr. Shivmurti Srivastav", Email: "shivmurti.shrivastava@cvmu.edu.in", 
-          Mobile: "+91 2692-233680" 
-        },
-        
-        {
-          Name: "Dr. Vinod Patel",
-          Email: "vinodpatel@gcet.ac.in",
-          Mobile:"+91 2692-231651"
-        },
-        {
-          Name: "Dr. Foram Joshi",
-          Email:"fmjoshi@mbit.edu.in",
-          Mobile: "+91 2692-230823"
-        }
-      ];
+      {
+        Name: "Dr. Shivmurti Srivastav", Email: "shivmurti.shrivastava@cvmu.edu.in",
+        Mobile: "+91 2692-233680"
+      },
 
-      const table = document.getElementById("table");
+      {
+        Name: "Dr. Vinod Patel",
+        Email: "vinodpatel@gcet.ac.in",
+        Mobile: "+91 2692-231651"
+      },
+      {
+        Name: "Dr. Foram Joshi",
+        Email: "fmjoshi@mbit.edu.in",
+        Mobile: "+91 2692-230823"
+      }
+    ];
 
-      tableData.forEach((entry) => {
-        const row = document.createElement("tr");
-        row.innerHTML = `<td>${entry.Name}</td><td>${entry.Email}</td><td>${entry.Mobile}</td>`;
-        table.appendChild(row);
-      });
+    const table = document.getElementById("table");
+
+    tableData.forEach((entry) => {
+      const row = document.createElement("tr");
+      row.innerHTML = `<td>${entry.Name}</td><td>${entry.Email}</td><td>${entry.Mobile}</td>`;
+      table.appendChild(row);
+    });
   </script>
 
   <script src="scriptContact.js"></script>

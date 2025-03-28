@@ -49,6 +49,7 @@
         margin: 2rem auto;
         display: block;
         animation: fadeIn 1s ease;
+        padding-top: 1rem;
       }
 
       .social-links {
@@ -204,11 +205,12 @@
       }
 
       .submit-paper {
-        color: #fff !important;
+        color: #000;
         /* background: #027bff; */
-        background: linear-gradient(to right, #2563eb 0%, #06b6d4 100%);
+        background-color: linear-gradient(to right, #cffafe 0%, #dbeafe 100%);
         /* -webkit-text-fill-color: transparent; */
         animation: fadeIn 1s ease;
+        box-shadow: 1px -4px 5px;
       }
 
       @keyframes fadeIn {
@@ -223,6 +225,7 @@
 
       .content-section {
         animation: slideUp 1s ease;
+        border-radius: 1rem;
       }
 
       .content-section h1 {
@@ -230,7 +233,7 @@
         color: #000;
         font-weight: bold;
         font-size: 2rem;
-        background: #fff;
+        /* background: #fff; */
         width: fit-content;
         margin: 0 auto;
         margin-bottom: 1rem;
@@ -259,14 +262,14 @@
 
         .content-section h1,
         p {
-          text-align: justify;
+          text-align: center;
         }
         .content-section h1{
           margin-bottom: 2rem;
         }
         .content-section h2,
         p {
-          text-align: justify;
+          text-align: center;
           font-size: 1rem;
         }
       }
@@ -303,7 +306,7 @@
               <a href="Payment.html">Payment Details</a>
             </div>
           </li>
-          <li><a href="keynote.html">Keynote Speakers</a></li>
+          <li><a href="keynote.html">Keynote Speaker</a></li>
           <li class="dropdown">
             <a href="#" class="dropbtn">Committee</a>
             <div class="dropdown-content">
@@ -316,9 +319,7 @@
           </li>
           <li><a href="index.html#contact">Contact Us</a></li>
           <li>
-            <a href="#" class="submit-paper" style="color: #000 !important"
-              >Submit Paper</a
-            >
+            <a href="#" class="submit-paper" onclick="openInNewTab('https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FSDSTD2025%2FSubmission%2FIndex')">Submit Paper</a>
           </li>
         </ul>
         <button class="menu-btn" onclick="toggleMenu()">☰</button>
@@ -344,7 +345,7 @@
             <a href="Payment.html">Payment Details</a>
           </div>
         </li>
-        <li><a href="keynote.html">Keynote Speakers</a></li>
+        <li><a href="keynote.html">Keynote Speaker</a></li>
         <li class="dropdown">
           <a href="#" class="dropbtn">Committee</a>
           <div class="dropdown-content">
@@ -356,7 +357,7 @@
           </div>
         </li>
         <li><a href="index.html#contact">Contact Us</a></li>
-        <li><a href="#" class="submit-paper">Submit Paper</a></li>
+        <li><a href="#" class="submit-paper" onclick="openInNewTab('https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FSDSTD2025%2FSubmission%2FIndex')">Submit Paper</a></li>
       </div>
     </header>
 

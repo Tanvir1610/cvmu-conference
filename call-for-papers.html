@@ -192,17 +192,18 @@
         font-weight: bold;
         font-size: 2rem;
         color: #000;
-        background: #fff;
+        /* background: #fff; */
         margin: 0 auto;
         width: 30%;
         margin-bottom: 1rem;
       }
       .submit-paper {
-        color: #fff !important;
+        color: #000;
         /* background: #027bff; */
-        background: linear-gradient(to right, #2563eb 0%, #06b6d4 100%);
+        background-color: linear-gradient(to right, #cffafe 0%, #dbeafe 100%);
         /* -webkit-text-fill-color: transparent; */
         animation: fadeIn 1s ease;
+        box-shadow: 1px -4px 5px;
       }
       @keyframes fadeInUp {
         to {
@@ -232,11 +233,12 @@
         ul li,
         p {
           text-align: justify;
-          /* font-size: 16px; */
+          font-size: 0.8rem;
         }
         .call-papers h1,
         h2 {
           text-align: center;
+          width: fit-content;
         }
         .link {
           font-size: 12px;
@@ -274,7 +276,7 @@
               <a href="Payment.html">Payment Details</a>
             </div>
           </li>
-          <li><a href="keynote.html">Keynote Speakers</a></li>
+          <li><a href="keynote.html">Keynote Speaker</a></li>
           <li class="dropdown">
             <a href="#" class="dropbtn">Committee</a>
             <div class="dropdown-content">
@@ -287,8 +289,7 @@
           </li>
           <li><a href="index.html#contact">Contact Us</a></li>
           <li>
-            <a href="#" class="submit-paper" style="color: #000 !important"
-              >Submit Paper</a
+            <a href="#" class="submit-paper" onclick="openInNewTab('https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FSDSTD2025%2FSubmission%2FIndex')">Submit Paper</a
             >
           </li>
         </ul>
@@ -315,7 +316,7 @@
             <a href="Payment.html">Payment Details</a>
           </div>
         </li>
-        <li><a href="keynote.html">Keynote Speakers</a></li>
+        <li><a href="keynote.html">Keynote Speaker</a></li>
         <li class="dropdown">
           <a href="#" class="dropbtn">Committee</a>
           <div class="dropdown-content">

@@ -184,6 +184,7 @@
       margin: 0 auto;
       flex-wrap: wrap;
     }
+
     h2 {
       font-weight: bold;
       color: #000;
@@ -197,8 +198,10 @@
 
     .local-committee-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 0.4fr));
       gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
     /* Responsive Design */
@@ -221,11 +224,12 @@
     }
 
     .submit-paper {
-      color: #fff !important;
+      color: #000;
       /* background: #027bff; */
-      background: linear-gradient(to right, #2563eb 0%, #06b6d4 100%);
+      background-color: linear-gradient(to right, #cffafe 0%, #dbeafe 100%);
       /* -webkit-text-fill-color: transparent; */
       animation: fadeIn 1s ease;
+      box-shadow: 1px -4px 5px;
     }
 
     p {
@@ -236,7 +240,7 @@
     .member-role {
       text-align: left;
       font-weight: bold;
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
 
     @keyframes fadeInUp {
@@ -282,13 +286,13 @@
       }
 
       .committee-member {
-        height: 150px;
-        width: 300px;
+        /* height: 400px; */
+        width: 150px;
         margin: 0 auto;
       }
 
       .committee-member img {
-        height: 180px;
+        height: 165px;
         width: 150px;
         margin: 0 auto;
       }
@@ -312,8 +316,8 @@
       }
 
       .coordinator-card {
-        height: 225px;
-        width: 300px;
+        /* height: 225px; */
+        width: 150px;
         margin: 0 auto;
         text-align: center;
         align-items: center;
@@ -400,7 +404,7 @@
             <a href="Payment.html">Payment Details</a>
           </div>
         </li>
-        <li><a href="keynote.html">Keynote Speakers</a></li>
+        <li><a href="keynote.html">Keynote Speaker</a></li>
         <li class="dropdown">
           <a href="#" class="dropbtn">Committee</a>
           <div class="dropdown-content">
@@ -413,7 +417,9 @@
         </li>
         <li><a href="index.html#contact">Contact Us</a></li>
         <li>
-          <a href="#" class="submit-paper" style="color: #000 !important">Submit Paper</a>
+          <a href="#" class="submit-paper"
+            onclick="openInNewTab('https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FSDSTD2025%2FSubmission%2FIndex')">Submit
+            Paper</a>
         </li>
       </ul>
       <button class="menu-btn" onclick="toggleMenu()">☰</button>
@@ -439,7 +445,7 @@
           <a href="Payment.html">Payment Details</a>
         </div>
       </li>
-      <li><a href="keynote.html">Keynote Speakers</a></li>
+      <li><a href="keynote.html">Keynote Speaker</a></li>
       <li class="dropdown">
         <a href="#" class="dropbtn">Committee</a>
         <div class="dropdown-content">
@@ -451,7 +457,9 @@
         </div>
       </li>
       <li><a href="index.html#contact">Contact Us</a></li>
-      <li><a href="#" class="submit-paper">Submit Paper</a></li>
+      <li><a href="#" class="submit-paper"
+          onclick="openInNewTab('https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FSDSTD2025%2FSubmission%2FIndex')">Submit
+          Paper</a></li>
     </div>
   </header>
   <main>
@@ -472,9 +480,11 @@
         <div class="committee-member">
           <img src="Bikhubhai.jpeg" alt="Er. Bhikhubhai B. Patel" class="member-image" style="object-fit: cover;" />
           <div class="member-info">
-            <h3 class="member-name">Er. Bhikhubhai B. Patel</h3>
+            <h3 class="member-name">Er. Shri Bhikhubhai B. Patel</h3>
             <p class="member-role" style="font-size: 1rem;">
-              Chairman, CVM<br />President, CVM University
+              President, CVMU
+              Chairman, CVM <br>
+              Vallabh Vidyanagar
             </p>
           </div>
         </div>
@@ -487,42 +497,42 @@
           <img src="ManishBhai.jpeg" alt="Shri Manishbhai S. Patel" class="member-image" />
           <div class="member-info">
             <h3 class="member-name">Shri Manishbhai S. Patel</h3>
-            <p class="member-role">Vice President, CVM University</p>
+            <p class="member-role">Vice President, CVM</p>
           </div>
         </div>
         <div class="committee-member">
           <img src="Dr. S. G. Patel.jpg" alt="Dr. S. G. Patel" class="member-image" />
           <div class="member-info">
             <h3 class="member-name">Dr. S. G. Patel</h3>
-            <p class="member-role">Hon Secretary, CVM University</p>
+            <p class="member-role">Hon Secretary, CVM</p>
           </div>
         </div>
         <div class="committee-member">
           <img src="rct.jpg" alt="RCT" class="member-image">
           <div class="member-info">
             <h3 class="member-name">Shri Ramesh Talati</h3>
-            <p class="member-role">Hon. Jt. Secretary, Charutar Vidya Mandal</p>
+            <p class="member-role">Hon. Jt. Secretary, CVM</p>
           </div>
         </div>
         <div class="committee-member">
           <img src="mdp.jpg" alt="MDP" class="member-image">
           <div class="member-info">
             <h3 class="member-name">Shri Mehul D. Patel</h3>
-            <p class="member-role">Hon. Jt. Secretary, Charutar Vidya Mandal</p>
+            <p class="member-role">Hon. Jt. Secretary, CVM</p>
           </div>
         </div>
         <div class="committee-member">
           <img src="vhp.jpg" alt="MDP" class="member-image">
           <div class="member-info">
             <h3 class="member-name">Shri Vishal H. Patel</h3>
-            <p class="member-role">Hon. Jt. Secretary, Charutar Vidya Mandal</p>
+            <p class="member-role">Hon. Jt. Secretary, CVM</p>
           </div>
         </div>
       </div>
       <br />
-      <h2 style="background: none; ">Local Advisory Committee</h2>
+      <h2 style="background: none; ">Advisors</h2>
       <br />
-      <div class="local-committee-grid" style="max-width: 900px; margin: 0 auto;">
+      <div class="local-committee-grid" style="max-width: 1200px; margin: 0 auto;">
         <div class="committee-member">
           <img src="hemant.jpeg" alt="HJP" class="member-image">
           <div class="member-info">
@@ -534,7 +544,14 @@
           <img src="registrar.png" alt="SW-PR" class="member-image">
           <div class="member-info">
             <h3 class="member-name">Dr. Sandeep Walia</h3>
-            <p class="member-role">Registrar, Dean Academics, CVMU</p>
+            <p class="member-role">Registrar, Dean Academics CVMU</p>
+          </div>
+        </div>
+        <div class="committee-member">
+          <img src="Indrajit Patel.jpg" alt="SW-PR" class="member-image">
+          <div class="member-info">
+            <h3 class="member-name">Prof. (Dr.) Indrajit Patel</h3>
+            <p class="member-role">Principal, BVM College<br/>V V Nagar</p>
           </div>
         </div>
       </div>
@@ -544,13 +561,13 @@
           <img src="KN Sir 1.jpg" alt="Dr. Kaushik Nath" class="member-image" />
           <div class="member-info">
             <h3 class="member-name">Dr. Kaushik Nath</h3>
-            <p class="member-role">Principal, GCET</p>
+            <p class="member-role">Principal, GCET <br/>Dean FoET</p>
           </div>
         </div>
         <div class="committee-member">
           <img src="VS (1).jpg" alt="Dr. Vishal Singh" class="member-image" />
           <div class="member-info">
-            <h3 class="member-name">Dr. Vishal Singh</h3>
+            <h3 class="member-name">Dr. Vishal N Singh</h3>
             <p class="member-role">Principal, ADIT</p>
           </div>
         </div>
@@ -564,16 +581,16 @@
       </div>
       <h2 style="background: none;">Conveners</h2>
       <div class="coordinators-grid">
-        <div class="coordinator-card" style="height: 250px;" width="369px">
+        <div class="coordinator-card">
           <div class="committee-member">
-            <img src="Shrivastav.jpg" alt="Dr. Shivmurti Srivastav" class="member-image" />
+            <img src="Dr. Shivamurti Srivastava_Convenor.jpeg" alt="Dr. Shivmurti Srivastav" class="member-image" />
           </div>
           <div class="coordinator-info">
             <h3>Dr. Shivmurti Srivastav</h3>
-            <p>Professor & Head,<br />Food Processing Technology, ADIT</p>
-            <button class="more-btn" onclick="openInNewTab('http://adit.ac.in/facultydetails206f.html?dept=14&id=34')">
+            <p>Professor & Head,<br/>Food Processing Technology,<br>ADIT</p>
+            <!-- <button class="more-btn" onclick="openInNewTab('http://adit.ac.in/facultydetails206f.html?dept=14&id=34')">
               More
-            </button>
+            </button> -->
             <!-- <div class="additional-info hidden">
                 <p>
                   Additional information about Dr. Shivmurti Srivastav will be
@@ -583,16 +600,16 @@
           </div>
         </div>
 
-        <div class="coordinator-card" style="height: 250px;" width="369px">
+        <div class="coordinator-card">
           <div class="committee-member">
             <img src="Vinod.jpeg" alt="Dr. Vinod Patel" class="member-image" />
           </div>
           <div class="coordinator-info">
-            <h3>Dr. Vinod Patel</h3>
-            <p>Professor & Head,<br />Mechatronics, GCET</p>
-            <button class="more-btn" onclick="openInNewTab('https://www.gcet.ac.in/staff.php')">
+            <h3>Dr. Vinod N. Patel</h3>
+            <p>Professor & Head,<br />Mechatronics,<br/>GCET</p>
+            <!-- <button class="more-btn" onclick="openInNewTab('https://www.gcet.ac.in/staff.php')">
               More
-            </button>
+            </button> -->
             <!-- <div class="additional-info hidden">
                 <p>
                   Additional information about Dr. Vinod Patel will be
@@ -602,16 +619,16 @@
           </div>
         </div>
 
-        <div class="coordinator-card" style="height: 250px;" width="369px">
+        <div class="coordinator-card">
           <div class="committee-member">
             <img src="Foram.jpg" alt="Dr. Foram Joshi" class="member-image" />
           </div>
           <div class="coordinator-info">
             <h3>Dr. Foram Joshi</h3>
-            <p>Assistant Professor,<br />Applied Science, MBIT</p>
-            <button class="more-btn" onclick="openInNewTab('https://www.mbit.edu.in/?page_id=12395')">
+            <p>Assistant Professor,<br />Applied Science,<br/>MBIT</p>
+            <!-- <button class="more-btn" onclick="openInNewTab('https://www.mbit.edu.in/?page_id=12395')">
               More
-            </button>
+            </button> -->
             <!-- <div class="additional-info hidden">
                 <p>
                   Additional information about Dr. Foram Joshi will be
@@ -668,36 +685,35 @@
           <img src="crp.jpg" alt="Dr. Chintan Patel" class="member-image1" />
           <div class="member-info">
             <h3 class="member-name">Dr. Chintan Patel</h3>
-            <p class="member-role" style="font-size: 0.8rem;">Assistant Professor,<br />Department of Electrical
-              Engineering, GCET</p>
+            <p class="member-role" style="font-size: 0.8rem;">Assistant Professor,<br/>Electrical Engineering,<br/>GCET</p>
           </div>
         </div>
         <div class="committee-member">
           <img src="KinjalParmar.jpg" alt="KinjalParmar" class="member-image2" />
           <div class="member-info">
             <h3 class="member-name">Kinjal Parmar</h3>
-            <p class="member-role" style="font-size: 0.8rem;">Assistant Professor,<br />Computer Engineering, ADIT</p>
+            <p class="member-role" style="font-size: 0.8rem;">Assistant Professor,<br />Computer Engineering,<br>ADIT</p>
           </div>
         </div>
         <div class="committee-member">
           <img src="JVP.png" alt="Dr. Maulika Patel" class="member-image3" style="margin-bottom: 0px;" />
           <div class="member-info">
             <h3 class="member-name">Jignasha Vishal Parmar</h3>
-            <p class="member-role" style="font-size: 0.8rem;">Assistant Professor,<br />Computer Engineering, ADIT</p>
+            <p class="member-role" style="font-size: 0.8rem;">Assistant Professor,<br />Computer Engineering,<br>ADIT</p>
           </div>
         </div>
         <div class="committee-member">
           <img src="Dhruv-Dalwadi.jpg" alt="Dhruv-Dalwadi" class="member-image3" style="margin-bottom: 0px;" />
           <div class="member-info">
             <h3 class="member-name">Prof. Dhruv Dalvadi</h3>
-            <p class="member-role" style="font-size: 0.8rem;">Assistant Professor, Computer Engineering, MBIT</p>
+            <p class="member-role" style="font-size: 0.8rem;">Assistant Professor,<br>Computer Engineering,<br>MBIT</p>
           </div>
         </div>
         <div class="committee-member">
           <img src="Jaina-Patel.jpg" alt="Jaina-Patel" class="member-image3" style="margin-bottom: 0px;" />
           <div class="member-info">
             <h3 class="member-name">Prof. Jaina Patel</h3>
-            <p class="member-role" style="font-size: 0.8rem;">Assistant Professor, Computer Engineering, MBIT</p>
+            <p class="member-role" style="font-size: 0.8rem;">Assistant Professor,<br>Computer Engineering,<br>MBIT</p>
           </div>
         </div>
       </div>
