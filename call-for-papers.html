@@ -6,10 +6,11 @@
     <title>Call for Papers - SDSTD2025</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-    rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
     <style>
       body {
         animation: slideUp 0.5s ease;
@@ -183,7 +184,7 @@
         .logo-container {
           gap: 2rem;
         }
-        .logo{
+        .logo {
           height: 25px;
         }
       }
@@ -203,7 +204,8 @@
         background-color: linear-gradient(to right, #cffafe 0%, #dbeafe 100%);
         /* -webkit-text-fill-color: transparent; */
         animation: fadeIn 1s ease;
-        box-shadow: 1px -4px 5px;
+        /* box-shadow: 1px -4px 5px; */
+        box-shadow: none;
       }
       @keyframes fadeInUp {
         to {
@@ -243,6 +245,19 @@
         .link {
           font-size: 12px;
         }
+        .submit-paper {
+          box-shadow: none;
+        }
+      }
+      ul li,p{
+        text-align: justify;
+        font-size: 1rem;
+      }
+      .contact p::before {
+        content: "→";
+        color: #007bff;
+        position: relative;
+        left: 0;
       }
     </style>
   </head>
@@ -272,7 +287,11 @@
               <a href="call-for-papers.html">Call for Papers</a>
               <a href="important-dates.html">Important Dates</a>
               <a href="submission-guidelines.html">Submission Guidelines</a>
-              <a href="#" onclick="openInNewTab('https://forms.gle/oZiaETYz1s2UpWhR8')">Registration</a>
+              <a
+                href="#"
+                onclick="openInNewTab('https://forms.gle/oZiaETYz1s2UpWhR8')"
+                >Registration</a
+              >
               <a href="Payment.html">Payment Details</a>
             </div>
           </li>
@@ -289,7 +308,11 @@
           </li>
           <li><a href="index.html#contact">Contact Us</a></li>
           <li>
-            <a href="#" class="submit-paper" onclick="openInNewTab('https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FSDSTD2025%2FSubmission%2FIndex')">Submit Paper</a
+            <a
+              href="#"
+              class="submit-paper"
+              onclick="openInNewTab('https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FSDSTD2025%2FSubmission%2FIndex')"
+              >Submit Paper</a
             >
           </li>
         </ul>
@@ -312,7 +335,11 @@
             <a href="call-for-papers.html">Call for Papers</a>
             <a href="important-dates.html">Important Dates</a>
             <a href="submission-guidelines.html">Submission Guidelines</a>
-            <a href="#" onclick="openInNewTab('https://forms.gle/oZiaETYz1s2UpWhR8')">Registration</a>
+            <a
+              href="#"
+              onclick="openInNewTab('https://forms.gle/oZiaETYz1s2UpWhR8')"
+              >Registration</a
+            >
             <a href="Payment.html">Payment Details</a>
           </div>
         </li>
@@ -353,9 +380,13 @@
               Conference Management Toolkit) portal only.
             </li>
             <li>
-              <p class="download-link">Download Manuscript Template:</p>
-              <a href="Template for Paper Preparation for STSTD2025.docx">Word File</a>
-                <!-- <a href="Template for Paper Preparation for STSTD2025.pdf">PDF File</a> -->
+              <p class="download-link">
+                Download Manuscript Template:
+                <a href="Template for Paper Preparation for STSTD2025.docx"
+                  >Word File</a
+                >
+              </p>
+              <!-- <a href="Template for Paper Preparation for STSTD2025.pdf">PDF File</a> -->
             </li>
           </ul>
           <br />
@@ -383,10 +414,14 @@
           </ul>
           <br />
           <h2>Contact Information</h2>
-          <p>
+          <p class="contact">
             All queries related to the conference shall be addressed to:
-            <a href="mailto:cvmconference.sdstd2025@cvmu.edu.in" class="link" onclick="window.open('mailto:cvmuconference.sdstd2025@cvmu.edu.in')"
-              >cvmuconference.sdstd2025@cvmu.edu.in</a>
+            <a
+              href="mailto:cvmconference.sdstd2025@cvmu.edu.in"
+              class="link"
+              onclick="window.open('mailto:cvmuconference.sdstd2025@cvmu.edu.in')"
+              >cvmuconference.sdstd2025@cvmu.edu.in</a
+            >
           </p>
           <br />
           <h2>Notes</h2>
@@ -409,7 +444,12 @@
       <div class="footer-content">
         <p>© 2025 SDSTD Conference. All rights reserved.</p>
         <div class="footer-links">
-          <p>Design And Develop By <span style="font-weight: bold">Student Team of CP & IT GCET College</span></p>
+          <p>
+            Design And Develop By
+            <span style="font-weight: bold"
+              >Student Team of CP & IT GCET College</span
+            >
+          </p>
         </div>
       </div>
     </footer>
@@ -423,8 +463,8 @@
         const mobileNav = document.getElementById("mobileNav");
         mobileNav.classList.remove("active");
       }
-      function openInNewTab(url){
-        window.open(url, '_blank').focus();
+      function openInNewTab(url) {
+        window.open(url, "_blank").focus();
       }
     </script>
     <script src="script.js"></script>

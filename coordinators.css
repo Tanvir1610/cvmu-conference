@@ -96,11 +96,11 @@ h1 {
 }
 
 .coordinator-info p {
-  color: #1e293b;
+  color: #64748b;
   /* line-height: 1.6; */
   /* padding: 0.5rem; */
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-align: left;
 }
 
