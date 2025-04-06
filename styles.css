@@ -53,7 +53,7 @@ header {
 
 /* Navigation Styles */
 nav {
-  background-color: #fff;
+  background-color: #0b274c;
   padding: 1rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -68,15 +68,18 @@ nav {
 
 .nav-links a {
   text-decoration: none;
-  color: #333;
+  color: white;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
+  border: 1px solid;
 }
 
 .nav-links a:hover {
   background: linear-gradient(to right, #cffafe 0%, #dbeafe 100%);
+  color: #333;
+  /* border: none; */
 }
 
 .nav-links a:not(.submit-paper)::after {
@@ -125,6 +128,7 @@ nav {
   /* padding: 0.75rem 1.5rem; */
   color: #333;
   transition: all 0.3s ease;
+  border: none;
 }
 
 .dropdown-content a:hover {
@@ -740,7 +744,7 @@ nav {
 /* Footer Styles */
 footer {
   background-color: #f8f9fa;
-  padding: 2rem;
+  padding: 0.5rem;
   /* margin-top: 1.5rem; */
 }
 
@@ -811,7 +815,7 @@ footer {
   .footer-content {
     flex-direction: column;
     text-align: justify;
-    gap: 1rem;
+    /* gap: 1rem; */
   }
 
   /* .footer-links a {
@@ -946,7 +950,7 @@ h2 {
 .member-role {
   color: #64748b;
   /* margin-bottom: 1rem; */
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: bold;
 }
 
@@ -1217,7 +1221,7 @@ h2 {
   }
 }
 
-@media only screen and (max-width:320px){
+/* @media only screen and (max-width:320px){
   body {
     text-align: justify;
   }
@@ -1239,7 +1243,7 @@ h2 {
     color: white;
     box-shadow: none;
   }
-}
+} */
 @media only screen and (max-width:390px){
   body {
     text-align: justify;
