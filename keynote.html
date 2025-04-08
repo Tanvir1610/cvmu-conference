@@ -381,7 +381,54 @@
         font-size: 8.9px;
       }
     }
+    @media (max-width: 320px) {
+      .local-committee-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin: 0 auto;
+        /* padding: 2rem; */
+        /* width: 300px; */
+        /* height: 150px; */
+        /* text-align: center; */
+        align-items: center;
+        max-width: 1200px;
+        justify-content: center;
+      }
 
+      .committee-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 0.4fr));
+        gap: 2rem;
+        /* margin-top: 2rem; */
+        max-width: 1200px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+      }
+      .committee-member img {
+        height: 150px;
+        width: 150px;
+      }
+      
+      .committee-member{
+        width: 150px;
+        height: 300px; 
+      }
+      .member-role {
+        font-size: 0.6rem;
+        text-align: left;
+        font-weight: bold;
+      }
+      .member-name {
+        font-size: 0.7rem;
+        text-align: left;
+        font-weight: bold;
+      }
+      #member {
+        font-size: 8.9px;
+      }
+    }
     .member-info {
       padding: 0.5rem;
       font-weight: bold;
@@ -394,6 +441,7 @@
       font-weight: 400;
       margin: 0;
       font-weight: bold;
+      text-align: left;
     }
   </style>
 </head>
@@ -527,7 +575,7 @@
     </div>
   </div>
   <div class="committee-member">
-    <img src="dummy-image.jpg" alt="Dr. Sundergopal Sridhar"
+    <img src="Dr. Sridhar - Keynote Chemical Civil track.jpg" alt="Dr. Sundergopal Sridhar"
       style="text-align: left; object-fit: cover;" />
     <div class="member-info">
       <h3 class="member-name">Name: Dr. Sundergopal Sridhar,</h3>
