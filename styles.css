@@ -952,6 +952,7 @@ h2 {
   /* margin-bottom: 1rem; */
   font-size: 0.75rem;
   font-weight: bold;
+  text-align: left;
 }
 
 .member-contact {
@@ -1361,5 +1362,18 @@ h2 {
   .submit-paper {
     color: white;
     box-shadow: none;
+  }
+}
+
+@media(max-width:375px){
+  .member-role {
+    font-size: 0.6rem;
+    text-align: left;
+    font-weight: bold;
+  }
+  .member-name {
+    font-size: 0.8rem;
+    text-align: left;
+    font-weight: bold;
   }
 }
