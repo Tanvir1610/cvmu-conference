@@ -32,11 +32,11 @@ header {
   align-items: center;
   padding: 1rem;
   gap: 10rem;
-  background-color: #f8f9fa;
+  /* background-color: #f8f9fa; */
 }
 
 .logo-container img {
-  height: 80px;
+  /* height: 80px; */
   width: 80px;
 }
 
